@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# 内部工作记录（不入库）
+.workbuddy/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp

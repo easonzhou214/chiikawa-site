@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>剧集总览 · 吉伊卡哇 剧情资料站</title>
+<link rel="icon" href="assets/images/logo-chiikawa.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-in">
+  <a class="nav-logo" href="index.html">
+    <img src="assets/images/logo-chiikawa.png" alt="ちいかわ">
+    <span class="lp">剧情资料站</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">首页</a>
+    <a href="episodes.html">剧集总览</a>
+    <a href="arcs.html">篇章地图</a>
+    <a href="characters.html">角色图鉴</a>
+    <a href="search.html">台词搜索</a>
+    <a href="about.html">关于本站</a>
+  </div>
+</div></nav>
+
+<main class="wrap">
+
+  <section class="sec" style="margin-top:30px">
+    <div class="sec-head">
+      <h2>剧集总览 · 第 1–345 话</h2>
+      <span class="sub">点任意一话展开剧情与台词</span>
+    </div>
+    <p style="margin:0 0 20px;color:var(--ink-2);font-size:14.5px;max-width:780px">
+      全部按日方放送回编号排列。<b>中文引进版（B 站／优酷／芒果 TV）目前覆盖到第 240 话</b>——第一季 1–120、第二季 121–240；
+      第 241–345 话尚未引进，站内已按日方进度补齐，并标注了对应季数。
+    </p>
+
+    <div class="filters">
+      <input type="search" id="q" placeholder="搜标题、剧情或台词里的词……">
+      <select id="f-season">
+        <option value="all">全部季度</option>
+        <option value="1">中文版第一季（1–120）</option>
+        <option value="2">中文版第二季（121–240）</option>
+        <option value="3">中文版未覆盖（241–345）</option>
+      </select>
+      <select id="f-arc"><option value="all">全部篇章</option></select>
+      <select id="f-conf">
+        <option value="all">全部可信度</option>
+        <option value="A">只看 A 级</option>
+        <option value="B">只看 B 级</option>
+      </select>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip on" data-arc="all">全部</span>
+      <span class="chip" data-arc="kusamushiri">除草检定篇</span>
+      <span class="chip" data-arc="ribbon">被表扬的丝带篇</span>
+      <span class="chip" data-arc="pajama">睡衣派对篇</span>
+      <span class="chip" data-arc="black-meteor">黑色流星篇</span>
+      <span class="chip" data-arc="shisa-qual">狮萨的资格证篇</span>
+      <span class="chip" data-arc="waki">涌出口篇</span>
+      <span class="chip" data-arc="hirogari">拾魔篇</span>
+      <span class="chip" data-arc="yamanba">山佬篇</span>
+      <span class="chip" data-arc="gekokujo">下克上与老师</span>
+      <span class="chip" data-arc="switch">开关·新朋友篇</span>
+      <span class="chip" data-arc="three-star">三星餐厅篇</span>
+      <span class="chip" data-arc="hole">洞穴篇</span>
+      <span class="chip" data-arc="camera">照相机篇</span>
+    </div>
+
+    <div class="res-count" id="res-count"></div>
+    <div class="ep-list" id="ep-list"></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="lk">
+    <a href="index.html">首页</a>
+    <a href="arcs.html">篇章地图</a>
+    <a href="characters.html">角色图鉴</a>
+    <a href="search.html">台词搜索</a>
+    <a href="about.html">关于本站</a>
+  </div>
+  <p>剧情文字为本站整理撰写；分集标题与播出日期来自公开资料。<br>
+  《ちいかわ》版权归原作者 nagano 及「ちいかわ製作委員会」所有。个人粉丝向整理，不作商业用途。</p>
+</footer>
+
+<script src="js/data-characters.js"></script>
+<script src="js/data-arcs.js"></script>
+<script src="js/episodes-01-40.js"></script>
+<script src="js/episodes-41-80.js"></script>
+<script src="js/episodes-81-120.js"></script>
+<script src="js/episodes-121-160.js"></script>
+<script src="js/episodes-161-200.js"></script>
+<script src="js/episodes-201-240.js"></script>
+<script src="js/episodes-241-280.js"></script>
+<script src="js/episodes-281-320.js"></script>
+<script src="js/episodes-321-345.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
